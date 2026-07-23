@@ -1,8 +1,12 @@
 aid: 360-commerce
 name: 360 Commerce
-description: '360 Commerce is a company surfaced as a portfolio company of sierra-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: retail-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: '360 Commerce is a New Zealand and Australia B2B ecommerce platform that helps wholesalers,
+  distributors and manufacturers bring customer ordering, account self-service and ERP-connected workflows
+  online. More than a standard ecommerce website, it gives customers a secure ordering portal for contract
+  and customer-specific pricing, ERP stock visibility, repeat ordering, quotes, approvals, invoices, credit
+  notes and aged balances. The platform (built on its EcomCore product) integrates with leading ERP, accounting,
+  inventory and CRM systems including Odoo, MYOB Advanced and NetSuite so online ordering reflects the way a
+  business actually trades.'
 url: https://raw.githubusercontent.com/api-evangelist/360-commerce/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +14,30 @@ x-backed-by:
 - sierra-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://www.360commerce.co.nz/media/1039/360commerce-logo.jpg
 tags:
 - Company
 - Retail Tech
+- Ecommerce
+- B2B
+- ERP Integration
+- Ordering Portal
+- Wholesale
+- New Zealand
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/360-commerce-domain-security.yml
 - type: Website
-  url: https://360commerce.co.nz/
+  url: https://www.360commerce.co.nz/
+- type: Blog
+  url: https://www.360commerce.co.nz/blog
+- type: Support
+  url: https://www.360commerce.co.nz/customer-support-page
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
